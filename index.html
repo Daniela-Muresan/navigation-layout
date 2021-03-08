@@ -25,31 +25,108 @@
             </div>
 
             <aside>
-                <div class="menu logo-boundary"></div>
-                <div class="navigation-icon">
-                    <img src="assets/logo-elite.png" alt="">
+                <div class="logo-boundary menu"></div>
+                <div class="navigation-logo">
+                    <img id="logo-img" src="assets/logo-elite.png" alt="logo-elite.png">
                 </div>
                 <nav>                
                     <ul class="navigation-list">
-                        <li><a class="navigation-item selected" data-content="order-container">Your Orders</a></li>
-                        <li><a class="navigation-item" data-content="reward-container">Reward Status</a></li>
-                        <li><a class="navigation-item" data-content="account-container">Account Settings</a></li>
-                        <li><a class="navigation-item" data-content="payment-container">Payment Methods</a></li>
+                        <li><a class="navigation-item selected" data-content="your-orders-summary">Your Orders</a></li>
+                        <li><a class="navigation-item" data-content="reword-status">Reward Status</a></li>
+                        <li><a class="navigation-item" data-content="account-settings">Account Settings</a></li>
+                        <li><a class="navigation-item" data-content="payment-methods">Payment Methods</a></li>
                         <li><a class="navigation-item" data-content="autentification">Sign Out</a></li>
                     </ul>
                 </nav>
             </aside>
             <main>
-                <!-- <div class="order-number order">Your Orders/Order #30002</div> -->
-                <!-- <div class="title">Account <span>Settings</span></div> -->
-                <!-- <div class="title order">Order <span>Details</span></div>
-                <div class="order-cancelled order">Order <span>Cancelled</span> </div> -->
+                <div class="order-number order hidden">Your Orders/Order #30002</div>
+                <h1 id="main-title">Your <span>Orders</span></h1>
+                <div class="order-cancelled order hidden">Order <span>Cancelled</span> </div> 
+ 
+                <!-- Prima Pagina - Your Orders -->
+                <div class="your-orders page">
+                    <div class="product"> <img src="assets/product-1/product.png" alt=""></div>
+                    <div class="product-details">
+                        <div class="row align-right">
+                            <div>April 1, 2021 <span>Processing</span></div>
+                            <div>Order Details <div class="thin-text">Cancel/Modify</div></div>
+                        </div>
+                        <div class="row">
+                           <div>Order # <span>30004</span></div> 
+                        </div>
+                        <div class="row">
+                           <div>Order Total <span>$324.96</span></div> 
+                        </div>
+                        <div class="row last ">
+                            <div class="text-more-prod">Also in the order</div>
+                            <div class="more-products">
+                                <div><img src="assets/product-1/addition-1.png" alt=""></div>
+                                <div><img src="assets/product-1/addition-3.png" alt=""></div>
+                                <div><img src="assets/product-1/addition-4.png" alt=""></div>
+                                <div class="three-more-prod"><a href="#">+3 <span>more</span></a></div> 
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
 
-                <!-- <div class="title payment">Payment <span>Methods</span></div> -->
-                <!-- <div class="title payment">Reward <span>Status</span></div> -->
-                <div class="title payment">Your <span>Orders</span></div>
-                <!--Prima pagina-->
-                <div class="account-settings page"> 
+                <!-- ar fi fost mai ok sa folosesc tabele? -->
+                <!--Pagina2 - Your Orders Summary-->
+                 <div class="your-orders-summary page hidden"> 
+                    <div class="row last-child-smaller">
+                             <div>Billing</div>
+                             <div>RallyInteractive 
+                                <span>244 W 300 N</span>
+                                <span>Salt Lake City, Utah 84103</span>
+                                <span>United States</span>
+                                <span>(801) 643-3595</span>
+                             </div>
+                            <div>Payment Status:
+                                <span>Refounded</span>
+                            </div>                        
+                    </div>
+                    <div class="row last-child-smaller">
+                        <div>Scipping</div>
+                        <div>RallyInteractive 
+                           <span>244 W 300 N</span>
+                           <span>Salt Lake City, Utah 84103</span>
+                           <span>United States</span>
+                           <span>(801) 643-3595</span>
+                        </div>
+                       <div>Payment Status:
+                           <span>Unfulfilled</span>
+                       </div>                        
+                    </div>
+                </div>
+
+                <!-- Pagina3 - Reword Status -->
+                <div class="reword-status page hidden">
+                    <div class="row">
+                        <div>Activity</div>
+                        <div>VIP <span>Curent Status</span></div>
+                        <div>GOLD <span>Next Tier</span></div>
+                    </div>
+                    <div class="row">
+                        <div></div>
+                        <div>$ 678.42 <span>Lifetime Spend</span></div>
+                        <div>$ 321.68 <span>To Gold Status</span></div>
+                    </div>
+                    <div class="row">
+                        <div></div>
+                        <div>003 <span>Orders</span></div>
+                        <div>007 <span>Referrals</span></div>
+                    </div>
+                    <div class="row reword">
+                        <div>Benefits</div>
+                        <div><img src="assets/icon-recurrent.png" alt=""></div>
+                        <div><img src="assets/icon-savings.png" alt=""></div>
+                    </div>
+                </div>
+                
+                <!--Pagina4 - Account Settings-->
+                <div class="account-settings page hidden"> 
                     <div class="subtitle">Account</div>                  
                     <form class="account">                  
                         <div class="name-phone">
@@ -73,7 +150,7 @@
                     </form>
 
                     <div class="subtitle">Address</div>
-                    <div class="address-info">
+                    <div>
                         <div class="address-box">
                             <div class="text">
                                 <span>Ben Cline</span>
@@ -95,104 +172,23 @@
                     </div>
                 </div>
 
-                <!--Pagina2-->
-                 <div class="your-orders-summary page"> 
+                <!--Pagina5 - Payment Methods-->
+                <div class="payment-methods page hidden"> 
                     <div class="row">
-                             <div>Billing</div>
-                             <div>RallyInteractive 
-                                <span>244 W 300 N</span>
-                                <span>Salt Lake City, Utah 84103</span>
-                                <span>United States</span>
-                                <span>(801) 643-3595</span>
-                             </div>
-                            <div>Payment Status:
-                                <span>Refounded</span>
-                            </div>                        
+                        <div><img src="assets/card-1.png" alt="card-1.png"></div>
+                        <div><img src="assets/card-3.png" alt="card-3.png"></div>
                     </div>
-                    <div class="row">
-                        <div>Scipping</div>
-                        <div>RallyInteractive 
-                           <span>244 W 300 N</span>
-                           <span>Salt Lake City, Utah 84103</span>
-                           <span>United States</span>
-                           <span>(801) 643-3595</span>
-                        </div>
-                       <div>Payment Status:
-                           <span>Unfulfilled</span>
-                       </div>                        
-                    </div>
-                </div>
-
-                <!--Pagina3-->
-                <div class="payment-methods page"> 
-                    <div class="row">
-                        <div><img src="assets/card-1.png" alt=""></div>
-                        <div><img src="assets/card-3.png" alt=""></div>
-                    </div>
-                    <div class="row">
-                        <div><img src="assets/card-2.png" alt=""></div>
+                    <div class="row text-align-center">
+                        <div><img src="assets/card-2.png" alt="card-2.png"></div>
                         <div class="more-options">
-                            <img src="assets/icon-plus.png" alt="">
+                            <img src="assets/icon-plus.png" alt="icon-plus.png">
                             <div>Add Card</div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Pagina4 -->
-                <div class="reword-status page">
-                    <div class="row">
-                        <div>Activity</div>
-                        <div>VIP <span>Curent Status</span></div>
-                        <div>GOLD <span>Next Tier</span></div>
-                    </div>
-                    <div class="row">
-                        <div></div>
-                        <div>$ 678.42 <span>Lifetime Spend</span></div>
-                        <div>$ 321.68 <span>To Gold Status</span></div>
-                    </div>
-                    <div class="row">
-                        <div></div>
-                        <div>003 <span>Orders</span></div>
-                        <div>007 <span>Referrals</span></div>
-                    </div>
-                    <div class="row reword">
-                        <div>Benefits</div>
-                        <div><img src="assets/icon-recurrent.png" alt=""></div>
-                        <div><img src="assets/icon-savings.png" alt=""></div>
-                    </div>
-                </div>
-
-                <!-- Pagina5 -->
-                <div class="your-orders page">
-                    <div class="product"> <img src="assets/product-1/product.png" alt=""></div>
-                    <div class="product-details">
-                        <div class="row">
-                            <div>April 1, 2021 <span>Processing</span></div>
-                            <div>Order Details <div class="thin-text">Cancel/Modify</div></div>
-                        </div>
-                        <div class="row">
-                           <div>Order # <span>30004</span></div> 
-                        </div>
-                        <div class="row">
-                           <div>Order Total <span>$324.96</span></div> 
-                        </div>
-                        <div class="row last">
-                            <div class="text-more-prod">
-                           Also in the order
-                        </div>
-                           <div class="more-products">
-                            <div><img src="assets/product-1/addition-1.png" alt=""></div>
-                            <div><img src="assets/product-1/addition-3.png" alt=""></div>
-                            <div><img src="assets/product-1/addition-4.png" alt=""></div>
-                            <div>
-                                <a>+3 <span>more</span></a></div> </div>
-                            
-                        </div>
-                    </div>
-                    
-                </div>
+                
             </main>
         </div>
-
+    <script src="resources/page-change.js"></script>
     </body>
 </html>
