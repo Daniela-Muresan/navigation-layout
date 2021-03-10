@@ -85,6 +85,7 @@ aside .logo-boundary{
 }
 
 /* Cred ca border-ul vroiai sa vina putin peste text, nu? */
+/* se puteam, dar nu ma deranjeaza sa fie asa; just FYI ca sa fie peste text trebuia sa lucram cu un element separat sau cu pseudo-elements */
 .selected{
     border-bottom: 5px solid #e8e0d8;
     padding-right: 30px;

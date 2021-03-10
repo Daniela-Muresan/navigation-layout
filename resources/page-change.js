@@ -34,6 +34,8 @@ function changePage(){
                 const mainTitleElement=document.getElementById('main-title');
                 const orderDetails=document.getElementsByClassName('order');
                 
+                // candidatul perfect pentru un switch aici
+                // si toate regulile care se repet aici trebuie sa le pui de fiecare data oare? nu exista o alta modalitate sa faci asta? codul repetitiv mereu trebuie sa fie un semnal de alarma
                 if(dataContent==='your-orders-summary'){
                     logoImg.setAttribute('src', 'assets/logo-vip.png');
                     logoImg.setAttribute('alt', 'logo-vip.png');
